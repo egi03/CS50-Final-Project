@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <br><br><br><br>
+    <h1><b>What the car ?</b></h1>
+    <p>What the car is a quiz game which will test your knowledge about body styles of cars</p>
+    <p>For sake of the quiz we will categorise every car in one of the following:</p>
+    <p>Sedan, SUV, Coupe, Convertible, Wagon, Hatchback, Pickup, Van/Minivan</p><br>
+    <h2><b>How to play ?</b></h2>
+    <p>You will be given a name and model of a car and you need to choose which body style that car has</p>
+    <p>In every round there will be five different cars for which you need to identify body style</p>
+    <p>Your results will be displayed on results tab</p>
+    <p>Can you get 5/5?</p>
+    <br>
+    <form action="/play" method="get">
+        <button type="submit" class="btn btn-dark">Let's play!</button>
+    </form>
+{% endblock %}
