@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Results
+{% endblock %}
+
+{% block main %}
+<div class="tabdiv">
+    <h1>Results of <b>{{ user }}</b></h1>
+    <br>
+    <table class="table">
+      <thead class="table-dark">
+        <tr>
+            <th>Result</th>
+            <th>Date</th>
+      </tr>
+      </thead>
+      <tbody>
+        {% for r in result %}
+            <tr>
+                <td>{{ r.result }} / 5</td>
+                <td>{{ r.date }}</td>
+            </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+</div>
+{% endblock %}
