@@ -1,0 +1,52 @@
+body
+{
+	font-family: "Comfortaa";
+	color:  #202429;
+}
+
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+.offcanvas-body
+{
+	background-color: #202429;
+}
+
+.offcanvas-header
+{
+	background-color: #202429;
+	color: white;
+}
+
+nav .navbar-brand {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: example 1s steps(60, end);
+}
+
+@keyframes example {
+  from {
+    width: 0;
+  }
+  to {
+    width: 600px;
+  }
+}
+
+.formdiv
+{
+	margin: auto;
+	width: 500px;
+	text-align: center;
+
+}
+
+.tabdiv
+{
+	margin: auto;
+	width: 50%;
+	text-align: center;
+}
