@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    End of quiz
+{% endblock %}
+
+{% block main %}
+    <br><br><br><br>
+    <h1>Congratulations!</h1>
+    <h3>You scored {{ result }} of 5!</h3>
+    <br>
+        <form action="/play" method="get">
+            <button type="submit" class="btn btn-dark"><b>Play again</b></button>
+        </form>
+    <br>
+        <form action="/" method="get">
+            <button type="submit" class="btn btn-dark">Home</button>
+        </form>
+    <br>
+        <form action="/results" method="get">
+            <button type="submit" class="btn btn-dark">Results</button>
+        </form>
+{% endblock %}
