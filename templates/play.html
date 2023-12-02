@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    QUIZ!
+{% endblock %}
+
+{% block main %}
+        <br>
+	    	<div class="formdiv">
+	        	<form action="/play" method="post">
+	        		<p>What kind of body style does <b>{{ q1 }}</b> have?</p>
+					<select class="form-select" aria-label="Default select example" name="first">
+						<option disabled="" selected="">Answear</option>
+						<option value="Sedan">Sedan</option>
+						<option value="SUV">SUV</option>
+						<option value="Coupe">Coupe</option>
+						<option value="Convertible">Convertible</option>
+						<option value="Wagon">Wagon</option>
+						<option value="Hatchback">Hatchback</option>
+						<option value="Pickup">Pickup</option>
+						<option value="Van/Minivan">Van / Minivan</option>
+					</select>
+					<br><br>
+					<p>What kind of body style does <b>{{ q2 }}</b> have?</p>
+					<select class="form-select" aria-label="Default select example" name="second">
+						<option disabled="" selected="">Answear</option>
+						<option value="Sedan">Sedan</option>
+						<option value="SUV">SUV</option>
+						<option value="Coupe">Coupe</option>
+						<option value="Convertible">Convertible</option>
+						<option value="Wagon">Wagon</option>
+						<option value="Hatchback">Hatchback</option>
+						<option value="Pickup">Pickup</option>
+						<option value="Van/Minivan">Van / Minivan</option>
+					</select>
+					<br><br>
+					<p>What kind of body style does <b>{{ q3 }}</b> have?</p>
+					<select class="form-select" aria-label="Default select example" name="third">
+						<option disabled="" selected="">Answear</option>
+						<option value="Sedan">Sedan</option>
+						<option value="SUV">SUV</option>
+						<option value="Coupe">Coupe</option>
+						<option value="Convertible">Convertible</option>
+						<option value="Wagon">Wagon</option>
+						<option value="Hatchback">Hatchback</option>
+						<option value="Pickup">Pickup</option>
+						<option value="Van/Minivan">Van / Minivan</option>
+					</select>
+					<br><br>
+					<p>What kind of body style does <b>{{ q4 }}</b> have?</p>
+					<select class="form-select" aria-label="Default select example" name="forth">
+						<option disabled="" selected="">Answear</option>
+						<option value="Sedan">Sedan</option>
+						<option value="SUV">SUV</option>
+						<option value="Coupe">Coupe</option>
+						<option value="Convertible">Convertible</option>
+						<option value="Wagon">Wagon</option>
+						<option value="Hatchback">Hatchback</option>
+						<option value="Pickup">Pickup</option>
+						<option value="Van/Minivan">Van / Minivan</option>
+					</select>
+					<br><br>
+					<p>What kind of body style does <b>{{ q5 }}</b> have?</p>
+					<select class="form-select" aria-label="Default select example" name="fifth">
+						<option disabled="" selected="">Answear</option>
+						<option value="Sedan">Sedan</option>
+						<option value="SUV">SUV</option>
+						<option value="Coupe">Coupe</option>
+						<option value="Convertible">Convertible</option>
+						<option value="Wagon">Wagon</option>
+						<option value="Hatchback">Hatchback</option>
+						<option value="Pickup">Pickup</option>
+						<option value="Van/Minivan">Van / Minivan</option>
+					</select>
+                    <br>
+					<button type="submit" class="btn btn-dark">Submit</button>
+	    		</form>
+    		</div>
+{% endblock %}
